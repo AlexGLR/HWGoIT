@@ -1,0 +1,38 @@
+// Задание 1 ---------------------------------------
+
+var base=prompt("Insert base" , "");
+var exponent=prompt("Insert exponent" , "");
+
+
+function pow(base, exponent) {
+  var result = 1;
+  for (i = 0; i < exponent; i++){
+    result *=base;
+  }
+  return console.log("Result: "+base +" ^ "+exponent +" is "+result);
+}
+
+pow(base,exponent);
+
+// Задание 2 ------------------------------------------
+
+var names=[];
+
+for (i=0; i<5; i++) {
+  names[i] = prompt ("Введите с заглавной буквы имя № " + [i+1] , "");
+}
+var userName = prompt("Введите с заглавной имя пользователя" , "");
+
+var result;
+for(i=0; i<names.length; i++) {
+  if (names[i]== userName){
+      var result=names[i];
+  }
+}
+
+if (result){
+  alert (result +' , Вы успешно вошли!');
+}else {
+  alert ('Такого имени в базе нет!');
+}
+
